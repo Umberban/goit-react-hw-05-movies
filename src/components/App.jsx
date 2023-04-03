@@ -1,6 +1,6 @@
 import { Suspense} from "react";
 import { Route, Routes, Navigate } from "react-router-dom";
-import {Layout} from "./shatteredLayot/Layout";
+import {Layout} from "./Layout/Layout";
 import {Cast} from "./cast/Cast";
 import {Reviews} from "./reviews/Reviews";
 import {Home} from 'pages/home/Home';
