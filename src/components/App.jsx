@@ -1,14 +1,14 @@
-import { Suspense} from "react";
+import { Suspense,lazy} from "react";
 import { Route, Routes, Navigate } from "react-router-dom";
 import {Layout} from "./Layout/Layout";
 import {Cast} from "./cast/Cast";
 import {Reviews} from "./reviews/Reviews";
-import {Home} from 'pages/home/Home';
-import {Movies} from 'pages/movies/Movies';
-import {Details} from 'pages/details/Details';
-// const Home = lazy(() => import('pages/home/Home'));
-// const Movies = lazy(() => import('pages/movies/Movies'));
-// const Details = lazy(() => import('pages/details/Details'))
+// import {Home} from 'pages/home/Home';
+// import {Movies} from 'pages/movies/Movies';
+// import {Details} from 'pages/details/Details';
+const Home = lazy(() => import('pages/home/Home'));
+const Movies = lazy(() => import('pages/movies/Movies'));
+const Details = lazy(() => import('pages/details/Details'))
 
 
 export const App = () => {

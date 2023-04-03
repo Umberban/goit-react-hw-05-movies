@@ -5,7 +5,7 @@ import { useLocation } from 'react-router-dom';
 import { searchMovies } from 'service/api';
 import css from './Movies.module.css';
 
-export const Movies = () => {
+const Movies = () => {
   const [movies, setMovies] = useState([]);
   const [input, setInput] = useState('');
   const [searchParams, setSearchParams] = useSearchParams();
@@ -62,3 +62,4 @@ export const Movies = () => {
     </>
   );
 };
+export default Movies;
