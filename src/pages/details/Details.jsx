@@ -6,6 +6,8 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { getMoviesById } from 'service/api';
 import css from './Details.module.css';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export const Details = () => {
   const { movieId } = useParams();
@@ -17,7 +19,7 @@ export const Details = () => {
     getMoviesById(movieId)
       .then(setMovie)
       .catch(error => {
-        
+        toast(`Wow we get ${error} !`)
       });
   }, [movieId]);
 
