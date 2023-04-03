@@ -42,19 +42,20 @@ export const Details = () => {
         <img
           src={
             poster_path
-              ? `https://image.tmdb.org/t/p/w500/${poster_path}`
-              : `https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Image_not_available.png/640px-Image_not_available.png`
+            ? `https://image.tmdb.org/t/p/w500/${poster_path}`
+            : `https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Image_not_available.png/640px-Image_not_available.png`
           }
+          className={css.img}
           alt={title}
         />
         <div className={css.movieDescription}>
-          <h2 className={css.movieTitle}>{title}</h2>
-          <h3 className={css.movieNextTitle}>User Score:</h3>
-          <p className={css.movieInfo}> {vote_average}</p>
-          <h3 className={css.movieNextTitle}>Overview:</h3>
-          <p className={css.movieInfo}>{overview}</p>
-          <h3 className={css.movieNextTitle}>Genres:</h3>
-          <p className={css.movieInfo}>
+          <h2 className={css.title}>{title}</h2>
+          <h3 className={css.descTitle}>User Score:</h3>
+          <p> {vote_average}</p>
+          <h3 className={css.descTitle}>Overview:</h3>
+          <p>{overview}</p>
+          <h3 className={css.descTitle}>Genres:</h3>
+          <p>
             {genres.map(genre => genre.name).join(', ')}
           </p>
         </div>

@@ -1,0 +1,14 @@
+.message{
+    color: red;
+    margin-bottom: 5px;
+}
+.list{
+    
+}
+.item{
+    margin: 25px;
+}
+.author{
+border-bottom: 2px solid black;
+margin-bottom: 15px;
+}

@@ -6,8 +6,8 @@ import css from 'components/navigation/navigation.module.css';
     return(
         <>
         <nav className={css.navigation}>
-            <NavLink to="/" ClassName={({ isActive }) => (isActive ? 'active' : 'inactive')}>Homie</NavLink>
-            <NavLink to="/movies" ClassName={({ isActive }) => (isActive ? 'active' : 'inactive')}>Movies</NavLink>
+            <NavLink to="/" className={({ isActive }) => (isActive ? 'active link' : 'inactive link')}>Homie</NavLink>
+            <NavLink to="/movies" className={({ isActive }) => (isActive ? 'active link' : 'inactive link')}>Movies</NavLink>
         </nav>
         </>
     )

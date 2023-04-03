@@ -1,0 +1,25 @@
+.title{
+font-size: 35px;
+margin-bottom: 15px;
+margin-left: 10px;
+}
+.list{
+ list-style:inside;
+ margin-left: 10px;
+}
+.item{
+margin-bottom: 8px;
+
+}
+.link{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    transition: color 50ms linear 50ms;
+}
+.link:visited{
+    color:red;
+}
+.link:hover{
+    color:#bada55;
+}

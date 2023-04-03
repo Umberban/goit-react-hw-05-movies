@@ -21,11 +21,11 @@ export const Home = () => {
 
   return (
     <>
-    <h1 className={css.homeTitle}>Trending movies today</h1>
-      <ul className={css.homeList}>
+    <h1 className={css.title}>Trending movies today</h1>
+      <ul className={css.list}>
         {movies.map(({ id, title }) => (
-          <li className={css.homeItem} key={id}>
-          <Link state={{from: location }} to={`movies/${id}`}>{title}</Link></li>
+          <li className={css.item} key={id}>
+          <Link className={css.link} state={{from: location }} to={`movies/${id}`}>{title}</Link></li>
         ))}
       </ul>
     </>
