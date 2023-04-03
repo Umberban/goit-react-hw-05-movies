@@ -1,3 +1,13 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
-import css from 'components/navigation/navigation.module.css';
+import { Outlet } from 'react-router-dom';
+import {Navigation} from 'components/navigation/Navigation';
+
+
+export const Layout = () => {
+  return (
+    <>
+    <Navigation/>
+    <Outlet />
+    </>
+  )
+};
